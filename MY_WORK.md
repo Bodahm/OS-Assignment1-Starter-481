@@ -29,10 +29,10 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
+| **Full Name** | [عبدالرحمن السبيعي] |
+| **Student ID** | [443050602] |
+| **University Email** | [443050602]@std.psau.edu.sa |
+| **GitHub Username** | [Bodahm] |
 | **Repository Link** | [Paste your repository link here] |
  
 ---
@@ -130,15 +130,24 @@
 ## Your Development Log
 
 ### Entry 1 - [Date and Time]
-**What I did**:
+**What I did**: Add Round-Robin algorithm with a fixed time quantum.
 
 **Details**:
+- Implemented the Round-Robin scheduling algorithm with a configurable time quantum.
+- Added an interactive algorithm selection menu supporting Round Robin, FCFS, and SJF.
+- Implemented a dynamic priority and aging mechanism to prevent process starvation.
+- Added a performance analytics report to calculate waiting time, turnaround time, and context switches.
 
 **Challenges**:
+- Handling thread re-enqueueing and synchronization safely when a process uses only a part of its time quantum.
+- Accurately tracking turnaround and waiting times across both pre-emptive and non-preemptive scheduling modes.
 
 **Solution**:
+- Utilized a `LinkedList` queue and a `HashMap` to track threads and map them back to their respective process objects.
+- Added specific metrics tracking variables inside the Process class and implemented an aging function to dynamically adjust priorities during queue cycles.
 
 **Time spent**:
+2 Hours
 
 ---
 
